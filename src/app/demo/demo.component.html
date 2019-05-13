@@ -1,0 +1,15 @@
+<h3>ngStyle Example</h3>
+<b>Employee list:</b>
+<p *ngFor="let employee of employeeList; let i = index">
+  <span [ngStyle]="{'color': getColor(employee.department)}">
+    {{i+1}} {{employee.name}}  ({{employee.department}})
+  </span>
+</p>
+
+<h3>ngClass Example</h3>
+<button (click)="isBoldTextSelected = !isBoldTextSelected"> <span [ngClass]="{'boldText greenColor': isBoldTextSelected}">Bold</span></button>
+<button (click)="isGreenColorSelected = !isGreenColorSelected"><span [ngClass]="{'boldText greenColor': isGreenColorSelected}">Green</span></button>
+
+<p [ngClass]="{'boldText': isBoldTextSelected, 'greenColor': isGreenColorSelected}">
+  This is ngClass demo
+</p>

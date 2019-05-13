@@ -1,0 +1,18 @@
+h3{
+    padding: 10px;
+    background-color: #bbb;
+}
+
+.boldText{
+    font-weight: bolder;
+}
+.greenColor{
+    color: green;
+}
+.blueColor{
+    color: blue;
+}
+
+button{
+    margin: 0 10px;
+}
